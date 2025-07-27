@@ -35,33 +35,18 @@ export class VendorLoginComponent {
     this.isLoading = true;
     this.errorMessage = '';
 
-<<<<<<< HEAD
     this.vendorService.login(this.credentials).subscribe({
-=======
-    this.vendorService.login({
-      VENDOR_ID: this.credentials.CUSTOMER_ID,
-      PASSWORD: this.credentials.PASSWORD
-    } as any).subscribe({
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
       next: (response) => {
         this.isLoading = false;
         console.log('Login response:', response);
 
-<<<<<<< HEAD
         if (response && response.message === 'Login successful.') {
-=======
-        if (response && response.MESSAGE === 'Login successful') {
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
           this.vendorService.setCurrentVendorId(this.credentials.CUSTOMER_ID);
           this.router.navigate(['/vendor/dashboard']).then(navigated => {
             console.log('Navigated to dashboard:', navigated);
           });
         } else {
-<<<<<<< HEAD
           alert(response.message || 'Invalid login.');
-=======
-          alert(response.MESSAGE || 'Invalid login.');
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
         }
       },
       error: (error) => {

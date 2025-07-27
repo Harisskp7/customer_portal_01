@@ -45,11 +45,7 @@ loadVendorProfile(): void {
 
   this.vendorService.getVendorProfile(this.vendorId).subscribe({
     next: (profile: VendorProfile) => {
-<<<<<<< HEAD
       this.vendorName = profile.NAME || 'Vendor';
-=======
-      this.vendorName = profile.Name1 || 'Vendor';
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
     },
     error: (error) => {
       console.error('Error loading vendor profile:', error);
@@ -126,17 +122,10 @@ loadVendorProfile(): void {
     switch (title) {
       case 'Request for Quotation':
         return 'fas fa-file-alt';
-<<<<<<< HEAD
       case 'Sales Delivery':
         return 'fas fa-truck';
       case 'Inquiry':
         return 'fas fa-question-circle';
-=======
-      case 'Purchase Orders':
-        return 'fas fa-shopping-cart';
-      case 'Goods Receipt':
-        return 'fas fa-truck';
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
       case 'Finance':
         return 'fas fa-chart-line';
       case 'Invoice':

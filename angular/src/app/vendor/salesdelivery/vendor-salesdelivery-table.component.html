@@ -45,7 +45,7 @@
                 <th><span><i class="fas fa-file-text"></i> Description</span></th>
                 <th><span><i class="fas fa-weight"></i> Quantity</span></th>
                 <th><span><i class="fas fa-ruler"></i> Unit</span></th>
-                <!-- <th><span><i class="fas fa-coins"></i> Currency</span></th> -->
+                <th><span><i class="fas fa-coins"></i> Currency</span></th>
               </tr>
             </thead>
             <tbody>
@@ -54,8 +54,8 @@
                 <td>{{ formatDate(delivery.ERDAT) }}</td>
                 <td>{{ delivery.MATNR }}</td>
                 <td class="description">{{ delivery.ARKTX }}</td>
-                <td class="quantity">{{ delivery.LFIMG | number:'1.0-0' }}</td>
-                <td>{{ delivery.MEINS }}</td>
+                <td class="quantity">{{ delivery.LFIMG | number:'1.0-0' }} {{ delivery.MEINS }}</td>
+                <td>{{ delivery.VRKME }}</td>
                 <td>{{ delivery.WAERK }}</td>
               </tr>
             </tbody>

@@ -25,7 +25,12 @@
 
   <main class="page-main">
     <div class="content-container">
-      <div class="table-container" *ngIf="invs.length > 0">
+      <div class="loading-container" *ngIf="isLoading">
+        <div class="spinner"></div>
+        <p>Loading invoices...</p>
+      </div>
+      
+      <div class="table-container" *ngIf="!isLoading && invs.length > 0">
         <div class="table-header">
           <h2>Invoice List</h2>
           <div class="table-actions">
@@ -86,7 +91,7 @@
           </table>
         </div>
       </div>
-      <div class="empty-state" *ngIf="invs.length === 0">
+      <div class="empty-state" *ngIf="!isLoading && invs.length === 0">
         <div class="empty-icon">
           <i class="fas fa-receipt"></i>
         </div>

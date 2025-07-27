@@ -40,53 +40,26 @@
             <colgroup>
               <col style="width: 120px;">
               <col style="width: 120px;">
-<<<<<<< HEAD
               <col style="width: 120px;">
               <col style="width: 110px;">
               <col style="width: 80px;">
-=======
-              <col style="width: 180px;">
-              <col style="width: 110px;">
-              <col style="width: 80px;">
-              <col style="width: 120px;">
-              <col>
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
             </colgroup>
             <thead>
               <tr>
                 <th><span><i class="fas fa-hashtag"></i> Memo No</span></th>
-<<<<<<< HEAD
                 <th><span><i class="fas fa-file-alt"></i> Doc Type</span></th>
                 <th><span><i class="fas fa-calendar"></i> Memo Date</span></th>
                 <th><span><i class="fas fa-rupee-sign"></i> Net Value</span></th>
                 <th><span><i class="fas fa-coins"></i> Currency</span></th>
-=======
-                <th><span><i class="fas fa-calendar"></i> Year</span></th>
-                <th><span><i class="fas fa-calendar"></i> Date</span></th>
-                <th><span><i class="fas fa-rupee-sign"></i> Amount</span></th>
-                <th><span><i class="fas fa-coins"></i> Currency</span></th>
-                <th><span><i class="fas fa-calendar"></i> Invoice Date</span></th>
-                <th><span><i class="fas fa-user"></i> Supplier Name</span></th>
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let mem of mems" class="table-row">
-<<<<<<< HEAD
                 <td class="memo-number">{{ mem.VBELN }}</td>
                 <td>{{ mem.FKART }}</td>
                 <td>{{ formatDate(mem.FKDAT) }}</td>
                 <td class="price">{{ mem.NETWR }}</td>
                 <td>{{ mem.WAERK }}</td>
-=======
-                <td class="memo-number">{{ mem.Vbeln }}</td>
-                <td>{{ mem.Gjahr }}</td>
-                <td>{{ formatDate(mem.Budat) }}</td>
-                <td class="price">{{ mem.Netwr }}</td>
-                <td>{{ mem.Waerk }}</td>
-                <td>{{ mem.Cpudt }}</td>
-                <td>{{ mem.Blart }}</td>
->>>>>>> da19d0f4d5f0a180eeb580753ba1c94888582447
               </tr>
             </tbody>
           </table>

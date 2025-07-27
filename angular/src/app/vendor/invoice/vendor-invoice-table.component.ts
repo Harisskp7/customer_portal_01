@@ -77,11 +77,10 @@ export class VendorInvoiceTableComponent implements OnInit {
     }
   }
 
-  downloadInvoicePdf(belnr: string): void {
-    if (this.isDownloading[belnr]) return;
-    
-    this.isDownloading[belnr] = true;
-    this.vendorService.getInvoicePdf(belnr).subscribe({
+  downloadInvoicePdf(vbeln: string): void {
+    if (this.isDownloading[vbeln]) return;
+    this.isDownloading[vbeln] = true;
+    this.vendorService.getInvoicePdf(vbeln).subscribe({
       next: (response) => {
         if (response.success && response.pdfBase64) {
           // Convert base64 to blob and download
@@ -96,15 +95,19 @@ export class VendorInvoiceTableComponent implements OnInit {
           const url = window.URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = url;
-          link.download = `invoice_${belnr}.pdf`;
+          link.download = `invoice_${vbeln}.pdf`;
           link.click();
           window.URL.revokeObjectURL(url);
+          console.log(`Invoice ${vbeln} downloaded successfully`);
+        } else {
+          console.error('PDF download failed: Invalid response');
         }
-        this.isDownloading[belnr] = false;
+        this.isDownloading[vbeln] = false;
       },
       error: (error) => {
         console.error('Error downloading invoice:', error);
-        this.isDownloading[belnr] = false;
+        alert(`Failed to download invoice ${vbeln}. Please try again later.`);
+        this.isDownloading[vbeln] = false;
       }
     });
   }
