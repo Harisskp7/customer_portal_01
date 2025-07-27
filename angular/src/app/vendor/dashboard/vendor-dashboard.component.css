@@ -601,3 +601,14 @@
     font-size: 15px;
   }
 }
+.inquiry-icon {
+  color: white; /* info blue */
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: transform 0.2s;
+}
+
+.inquiry-icon:hover {
+  transform: scale(1.2);
+}
