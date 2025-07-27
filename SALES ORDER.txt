@@ -1,0 +1,2 @@
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_salesorder_sd?sap-client=100
+urn:sap-com:document:sap:rfc:functions

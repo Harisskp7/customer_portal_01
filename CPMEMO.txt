@@ -1,0 +1,7 @@
+ZCP_MEMO577_S
+ZCP_MEMO577_T
+
+ZCP_MEMO577_FM
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_memo_sd?sap-client=100
+urn:sap-com:document:sap:rfc:functions
+

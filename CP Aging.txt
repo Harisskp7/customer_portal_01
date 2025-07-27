@@ -1,0 +1,9 @@
+ZCP_AGING577_T
+ZCP_AGING577_S
+
+
+ZCP_AGING577_FM
+ZCP_AGING_SD 
+
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_aging_sd?sap-client=100
+urn:sap-com:document:sap:rfc:functions

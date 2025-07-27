@@ -1,0 +1,6 @@
+ZCP_INVOICE_S
+ZCP_INVOICE_T
+ZCP_INVOICE577_FM
+ZCP_INVOICE_SD
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_invoice_sd?sap-client=100
+urn:sap-com:document:sap:rfc:functions

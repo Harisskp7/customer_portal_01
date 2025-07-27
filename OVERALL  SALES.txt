@@ -1,0 +1,10 @@
+ZCP_0VERALLSALES_S
+ZCP_0VERALLSALES_T
+
+ZCP_OVERALL_SD
+
+ZCP_OVERALLSALES577_FM
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_overall_sd?sap-client=100
+
+urn:sap-com:document:sap:rfc:functions
+

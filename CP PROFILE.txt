@@ -1,0 +1,16 @@
+kunnr,name1, ort01 ,pstlz,stras ,land1.
+
+
+Structure  
+ZCP_PROFILE577_S
+
+Func module
+
+ZCP_PROFILE577_FM
+
+SD : ZCP_PROFILE_SD
+
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_profile_sd?sap-client=100
+
+
+urn:sap-com:document:sap:rfc:functions

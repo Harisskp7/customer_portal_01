@@ -1,0 +1,25 @@
+ZCP_SALESDELIVERY_S
+ZCP_SALESDELIVERY_T
+ZCP_SALESDELIVERY_SD
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_salesdelivery_sd?sap-client=100
+urn:sap-com:document:sap:rfc:functions
+ZCP_SALESDELIVERY577_FM
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                      xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <urn:ZCP_SALESDELIVERY577_FM>
+          <IV_CUSTOMER_ID>0000000002</IV_CUSTOMER_ID>
+        </urn:ZCP_SALESDELIVERY577_FM>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+<VBELN>0080000001</VBELN>
+                    <ERDAT>2025-05-15</ERDAT>
+                    <MATNR>000000000000000008</MATNR>
+                    <ARKTX>biscuit</ARKTX>
+                    <LFIMG>3.0</LFIMG>
+                    <MEINS>EA</MEINS>
+                    <WAERK/>

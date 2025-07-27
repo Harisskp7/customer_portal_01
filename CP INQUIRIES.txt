@@ -1,0 +1,32 @@
+Structure : ZCP_INQUIRY577_S
+Table Type : ZCP_INQUIRY577_T
+Func module : ZCP_INQUIRY577_FM
+SD : ZCP_INQURIES_SD
+
+http://AZKTLDS5CP.kcloud.com:8000/sap/bc/srt/scs/sap/zcp_inquries_sd?sap-client=100
+urn:sap-com:document:sap:rfc:functions
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                      xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <urn:ZCP_INQUIRY577_FM>
+          <IV_CUSTOMER_ID>0000000002</IV_CUSTOMER_ID>
+        </urn:ZCP_INQUIRY577_FM>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+<ERDAT>2025-05-19</ERDAT>
+                    <ERNAM>TRAINEE</ERNAM>
+                    <WAERK>EUR</WAERK>
+                    <ARKTX>oreo</ARKTX>
+                    <POSNR>000010</POSNR>
+                    <NETWR>111.0</NETWR>
+                    <VRKME>EA</VRKME>
+                    <AUART>AF</AUART>
+                    <ANGDT>2025-05-20</ANGDT>
+                    <BNDDT>2025-08-20</BNDDT>
+                    <VBELN>0010000031</VBELN>
+                    <MATNR>000000000000000016</MATNR>
+                    <POSAR/>
