@@ -1,57 +1,58 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/vendor/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/customer/login', pathMatch: 'full' },
   {
-    path: 'vendor/login',
+    path: 'customer/login',
     loadComponent: () =>
-      import('./vendor/login/vendor-login.component').then(m => m.VendorLoginComponent)
+      import('./customer/login/vendor-login.component').then(m => m.VendorLoginComponent)
   },
   
   {
-    path: 'vendor/dashboard',
+    path: 'customer/dashboard',
     loadComponent: () =>
-      import('./vendor/dashboard/vendor-dashboard.component').then(m => m.VendorDashboardComponent)
+      import('./customer/dashboard/vendor-dashboard.component').then(m => m.VendorDashboardComponent)
   },
   {
-    path: 'vendor/profile',
+    path: 'customer/profile',
     loadComponent: () =>
-      import('./vendor/profile/vendor-profile.component').then(m => m.VendorProfileComponent)
+      import('./customer/profile/vendor-profile.component').then(m => m.VendorProfileComponent)
   },
   {
-    path: 'vendor/salesorder',
+    path: 'customer/salesorder',
     loadComponent: () =>
-      import('./vendor/salesorder/vendor-salesorder-table.component').then(m => m.VendorSalesorderTableComponent)
+      import('./customer/salesorder/vendor-salesorder-table.component').then(m => m.VendorSalesorderTableComponent)
+  },
+
+  {
+    path: 'customer/inv',
+    loadComponent: () =>
+      import('./customer/invoice/vendor-invoice-table.component').then(m => m.VendorInvoiceTableComponent)
   },
   {
-    path: 'vendor/po',
+    path: 'customer/memo',
     loadComponent: () =>
-      import('./vendor/po/vendor-po-table.component').then(m => m.VendorpoComponent)
+      import('./customer/memo/vendor-memo-table.component').then(m => m.VendormemoComponent)
   },
   {
-    path: 'vendor/inv',
+    path: 'customer/pay',
     loadComponent: () =>
-      import('./vendor/invoice/vendor-invoice-table.component').then(m => m.VendorInvoiceTableComponent)
+      import('./customer/pay/vendor-pay-table.component').then(m => m.VendorpayComponent)
   },
   {
-    path: 'vendor/memo',
+    path: 'customer/salesdelivery',
     loadComponent: () =>
-      import('./vendor/memo/vendor-memo-table.component').then(m => m.VendormemoComponent)
+      import('./customer/salesdelivery/vendor-salesdelivery-table.component').then(m => m.VendorSalesdeliveryTableComponent)
   },
   {
-    path: 'vendor/pay',
+    path: 'customer/inquiry',
     loadComponent: () =>
-      import('./vendor/pay/vendor-pay-table.component').then(m => m.VendorpayComponent)
+      import('./customer/inquiry/vendor-inquiry-table.component').then(m => m.VendorInquiryTableComponent)
   },
   {
-    path: 'vendor/salesdelivery',
+    path: 'customer/overallsales',
     loadComponent: () =>
-      import('./vendor/salesdelivery/vendor-salesdelivery-table.component').then(m => m.VendorSalesdeliveryTableComponent)
+      import('./customer/overallsales/vendor-overallsales.component').then(m => m.VendorOverallsalesComponent)
   },
-  {
-    path: 'vendor/inquiry',
-    loadComponent: () =>
-      import('./vendor/inquiry/vendor-inquiry-table.component').then(m => m.VendorInquiryTableComponent)
-  },
-  { path: '**', redirectTo: '/vendor/login' }
+  { path: '**', redirectTo: '/customer/login' }
 ];
